@@ -14,7 +14,6 @@ def mask_image(filename1):
     blur = cv2.GaussianBlur(gray, (5, 5), 0)
     canny = cv2.Canny(blur, 10, 70)
     ret, mask = cv2.threshold(canny, 70, 255, cv2.THRESH_BINARY)
-    # plt.subplot(screenId), plt.imshow(mask, 'gray'), plt.title(filename1 + "_E"), plt.axis('off')
     return ret, mask
  
 def mse(img1, img2):
