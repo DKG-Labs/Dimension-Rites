@@ -1,0 +1,6 @@
+pymongo
+mysql-connector-python
+opencv-python
+Pillow
+pixelmatch
+numpy
